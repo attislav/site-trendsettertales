@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import { getPosts, getCategories } from '@/lib/wordpress';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = 'https://lookenly.com';
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://trendsettertales.com';
 
   // Statische Seiten
   const staticPages = [

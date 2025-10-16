@@ -264,8 +264,8 @@ export default function PrivacyPage() {
             </ul>
             <p className="text-neutral-700 leading-relaxed mb-4">
               To exercise these rights, please contact us at:{' '}
-              <a href="mailto:hey@lookenly.com" className="text-accent hover:text-primary underline">
-                hey@lookenly.com
+              <a href="mailto:hey@trendsettertales.com" className="text-accent hover:text-primary underline">
+                hey@trendsettertales.com
               </a>
             </p>
 
@@ -339,11 +339,11 @@ export default function PrivacyPage() {
               </p>
               <p>
                 <strong>Email:</strong>{' '}
-                <a href="mailto:hey@lookenly.com" className="text-accent hover:text-primary underline">
-                  hey@lookenly.com
+                <a href="mailto:hey@trendsettertales.com" className="text-accent hover:text-primary underline">
+                  hey@trendsettertales.com
                 </a>
               </p>
-              <p><strong>Website:</strong> lookenly.com</p>
+              <p><strong>Website:</strong> trendsettertales.com</p>
             </div>
           </section>
         </div>

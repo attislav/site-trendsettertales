@@ -29,7 +29,7 @@ npm start
 ## 🌐 Live Site
 
 - **URL:** https://trendsettertales.com
-- **Status:** github_pushed
+- **Status:** deploying
 
 ## 📝 Configuration
 

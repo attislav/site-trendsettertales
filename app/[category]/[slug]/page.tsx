@@ -30,22 +30,22 @@ export async function generateMetadata({ params }: PostPageProps) {
 
   if (!post) {
     return {
-      title: 'Post Not Found - Lookenly',
+      title: 'Post Not Found - TrendsetterTales',
       description: 'Der gesuchte Artikel wurde nicht gefunden.',
     };
   }
 
   // Clean and prepare description
   const cleanExcerpt = post.excerpt?.replace(/<[^>]*>/g, '').trim() || '';
-  const description = cleanExcerpt.substring(0, 160) || `${post.title.replace(/<[^>]*>/g, '')} - Entdecke die neuesten Fashion, Beauty und Lifestyle Trends auf Lookenly.`;
+  const description = cleanExcerpt.substring(0, 160) || `${post.title.replace(/<[^>]*>/g, '')} - Entdecke die neuesten Beauty, Outfits und Nails Trends auf TrendsetterTales.`;
 
   // Get category for keywords
   const category = post.categories.nodes[0];
   const keywords = [
-    category?.name || 'Fashion',
-    'Beauty',
-    'Lifestyle',
-    'Lookenly',
+    category?.name || 'Beauty',
+    'Outfits',
+    'Nails',
+    'TrendsetterTales',
     'Trends',
     'Style',
   ].join(', ');
@@ -53,10 +53,10 @@ export async function generateMetadata({ params }: PostPageProps) {
   const categorySlug = category?.slug || 'uncategorized';
 
   return {
-    title: `${post.title.replace(/<[^>]*>/g, '')} | Lookenly`,
+    title: `${post.title.replace(/<[^>]*>/g, '')} | TrendsetterTales`,
     description,
     keywords,
-    authors: [{ name: post.author?.node.name || 'Lookenly Team' }],
+    authors: [{ name: post.author?.node.name || 'TrendsetterTales Team' }],
     openGraph: {
       title: post.title.replace(/<[^>]*>/g, ''),
       description,
@@ -68,8 +68,8 @@ export async function generateMetadata({ params }: PostPageProps) {
       }] : [],
       type: 'article',
       publishedTime: post.date,
-      authors: [post.author?.node.name || 'Lookenly Team'],
-      siteName: 'Lookenly',
+      authors: [post.author?.node.name || 'TrendsetterTales Team'],
+      siteName: 'TrendsetterTales',
     },
     twitter: {
       card: 'summary_large_image',
@@ -78,7 +78,7 @@ export async function generateMetadata({ params }: PostPageProps) {
       images: post.featuredImage ? [post.featuredImage.node.sourceUrl] : [],
     },
     alternates: {
-      canonical: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://lookenly.com'}/${categorySlug}/${slug}`,
+      canonical: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://trendsettertales.com'}/${categorySlug}/${slug}`,
     },
   };
 }

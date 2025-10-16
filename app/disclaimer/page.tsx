@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Disclaimer | Lookenly',
-  description: 'Disclaimer for Lookenly - Important information about our content and recommendations.',
+  title: 'Disclaimer | TrendsetterTales',
+  description: 'Disclaimer for TrendsetterTales - Important information about our content and recommendations.',
   robots: {
     index: false,
     follow: true,
@@ -28,7 +28,7 @@ export default function DisclaimerPage() {
           {/* Introduction */}
           <section>
             <p className="text-neutral-700 leading-relaxed mb-4">
-              The information provided on Lookenly is for general informational and entertainment purposes only.
+              The information provided on TrendsetterTales is for general informational and entertainment purposes only.
               All information on the site is provided in good faith, however we make no representation or
               warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability,
               availability, or completeness of any information on the site.
@@ -41,7 +41,7 @@ export default function DisclaimerPage() {
               1. General Information Disclaimer
             </h2>
             <p className="text-neutral-700 leading-relaxed mb-4">
-              The content on Lookenly, including articles, blog posts, images, and recommendations, is intended
+              The content on TrendsetterTales, including articles, blog posts, images, and recommendations, is intended
               for informational purposes only. While we strive to provide accurate and up-to-date information,
               we make no guarantees about the completeness, reliability, or accuracy of this information.
             </p>
@@ -57,7 +57,7 @@ export default function DisclaimerPage() {
               2. Fashion and Beauty Advice
             </h2>
             <p className="text-neutral-700 leading-relaxed mb-4">
-              The fashion, beauty, and lifestyle advice provided on Lookenly represents our opinions and
+              The fashion, beauty, and lifestyle advice provided on TrendsetterTales represents our opinions and
               experiences. What works for us may not work for you. We are not professional stylists,
               dermatologists, or medical professionals unless explicitly stated.
             </p>
@@ -83,7 +83,7 @@ export default function DisclaimerPage() {
               3. Product Recommendations and Reviews
             </h2>
             <p className="text-neutral-700 leading-relaxed mb-4">
-              Product recommendations and reviews on Lookenly are based on our personal experiences and opinions.
+              Product recommendations and reviews on TrendsetterTales are based on our personal experiences and opinions.
               Your experience with a product may differ. We recommend that you:
             </p>
             <ul className="list-disc list-inside text-neutral-700 space-y-2 mb-4 pl-4">
@@ -104,7 +104,7 @@ export default function DisclaimerPage() {
               4. Affiliate Links and Sponsored Content
             </h2>
             <p className="text-neutral-700 leading-relaxed mb-4">
-              Lookenly may contain affiliate links to products and services. This means we may earn a commission
+              TrendsetterTales may contain affiliate links to products and services. This means we may earn a commission
               if you make a purchase through these links at no additional cost to you.
             </p>
             <p className="text-neutral-700 leading-relaxed mb-4">
@@ -123,7 +123,7 @@ export default function DisclaimerPage() {
               5. External Links Disclaimer
             </h2>
             <p className="text-neutral-700 leading-relaxed mb-4">
-              Our website may contain links to external websites that are not owned or controlled by Lookenly.
+              Our website may contain links to external websites that are not owned or controlled by TrendsetterTales.
               We have no control over and assume no responsibility for the content, privacy policies, or
               practices of any third-party sites or services.
             </p>
@@ -140,13 +140,13 @@ export default function DisclaimerPage() {
               6. Images and Copyright
             </h2>
             <p className="text-neutral-700 leading-relaxed mb-4">
-              Images on Lookenly are either our own original content, licensed stock photos, or used with
+              Images on TrendsetterTales are either our own original content, licensed stock photos, or used with
               permission. We make every effort to properly attribute images and respect copyright laws.
             </p>
             <p className="text-neutral-700 leading-relaxed mb-4">
               If you believe any content on our site infringes your copyright, please contact us at:{' '}
-              <a href="mailto:hey@lookenly.com" className="text-accent hover:text-primary underline">
-                hey@lookenly.com
+              <a href="mailto:hey@trendsettertales.com" className="text-accent hover:text-primary underline">
+                hey@trendsettertales.com
               </a>
             </p>
           </section>
@@ -157,7 +157,7 @@ export default function DisclaimerPage() {
               7. Testimonials and Reviews
             </h2>
             <p className="text-neutral-700 leading-relaxed mb-4">
-              Any testimonials or reviews featured on Lookenly reflect the personal experiences of individuals
+              Any testimonials or reviews featured on TrendsetterTales reflect the personal experiences of individuals
               and may not be representative of what others might experience. Individual results may vary.
             </p>
             <p className="text-neutral-700 leading-relaxed mb-4">
@@ -171,7 +171,7 @@ export default function DisclaimerPage() {
               8. Not Professional Advice
             </h2>
             <p className="text-neutral-700 leading-relaxed mb-4">
-              The information on Lookenly is not intended to replace professional advice. We are not licensed
+              The information on TrendsetterTales is not intended to replace professional advice. We are not licensed
               professionals in any field unless explicitly stated. For specific concerns, please consult with
               appropriate professionals:
             </p>
@@ -189,7 +189,7 @@ export default function DisclaimerPage() {
               9. Errors and Omissions
             </h2>
             <p className="text-neutral-700 leading-relaxed mb-4">
-              While we make every effort to ensure that information on Lookenly is accurate and current,
+              While we make every effort to ensure that information on TrendsetterTales is accurate and current,
               errors and omissions may occur. We reserve the right to correct any errors, inaccuracies,
               or omissions and to change or update information at any time without prior notice.
             </p>
@@ -239,18 +239,18 @@ export default function DisclaimerPage() {
               </p>
               <p>
                 <strong>Email:</strong>{' '}
-                <a href="mailto:hey@lookenly.com" className="text-accent hover:text-primary underline">
-                  hey@lookenly.com
+                <a href="mailto:hey@trendsettertales.com" className="text-accent hover:text-primary underline">
+                  hey@trendsettertales.com
                 </a>
               </p>
-              <p><strong>Website:</strong> lookenly.com</p>
+              <p><strong>Website:</strong> trendsettertales.com</p>
             </div>
           </section>
         </div>
 
         {/* Footer Note */}
         <div className="mt-8 text-center text-sm text-neutral-500">
-          <p>By using Lookenly, you acknowledge that you have read and understood this Disclaimer</p>
+          <p>By using TrendsetterTales, you acknowledge that you have read and understood this Disclaimer</p>
         </div>
       </div>
     </main>

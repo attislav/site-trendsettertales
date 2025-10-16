@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Terms of Service | Lookenly',
-  description: 'Terms of Service for Lookenly - Read our terms and conditions for using our website.',
+  title: 'Terms of Service | TrendsetterTales',
+  description: 'Terms of Service for TrendsetterTales - Read our terms and conditions for using our website.',
   robots: {
     index: false,
     follow: true,
@@ -28,8 +28,8 @@ export default function TermsPage() {
           {/* Introduction */}
           <section>
             <p className="text-neutral-700 leading-relaxed mb-4">
-              Welcome to Lookenly. These Terms of Service ("Terms") govern your access to and use of our
-              website, content, and services. By accessing or using Lookenly, you agree to be bound by
+              Welcome to TrendsetterTales. These Terms of Service ("Terms") govern your access to and use of our
+              website, content, and services. By accessing or using TrendsetterTales, you agree to be bound by
               these Terms.
             </p>
             <p className="text-neutral-700 leading-relaxed">
@@ -43,7 +43,7 @@ export default function TermsPage() {
               1. Agreement to Terms
             </h2>
             <p className="text-neutral-700 leading-relaxed mb-4">
-              By accessing Lookenly, you agree that you have read, understood, and agree to be bound by these
+              By accessing TrendsetterTales, you agree that you have read, understood, and agree to be bound by these
               Terms. We reserve the right to modify these Terms at any time. Changes will be effective
               immediately upon posting. Your continued use of the website after changes are posted constitutes
               your acceptance of the modified Terms.
@@ -99,8 +99,8 @@ export default function TermsPage() {
               Our Content
             </h3>
             <p className="text-neutral-700 leading-relaxed mb-4">
-              All content on Lookenly, including text, graphics, logos, images, videos, and software, is the
-              property of Lookenly or its content suppliers and is protected by international copyright,
+              All content on TrendsetterTales, including text, graphics, logos, images, videos, and software, is the
+              property of TrendsetterTales or its content suppliers and is protected by international copyright,
               trademark, and other intellectual property laws.
             </p>
             <p className="text-neutral-700 leading-relaxed mb-4">
@@ -119,7 +119,7 @@ export default function TermsPage() {
               User-Generated Content
             </h3>
             <p className="text-neutral-700 leading-relaxed mb-4">
-              If you submit comments, feedback, or other content to Lookenly, you grant us a worldwide,
+              If you submit comments, feedback, or other content to TrendsetterTales, you grant us a worldwide,
               non-exclusive, royalty-free, perpetual license to use, reproduce, modify, adapt, publish,
               translate, distribute, and display such content.
             </p>
@@ -132,7 +132,7 @@ export default function TermsPage() {
             </h2>
             <p className="text-neutral-700 leading-relaxed mb-4">
               Our website may contain links to third-party websites or services that are not owned or
-              controlled by Lookenly. We have no control over and assume no responsibility for the content,
+              controlled by TrendsetterTales. We have no control over and assume no responsibility for the content,
               privacy policies, or practices of any third-party websites or services.
             </p>
             <p className="text-neutral-700 leading-relaxed mb-4">
@@ -147,7 +147,7 @@ export default function TermsPage() {
               5. Affiliate Links and Advertising
             </h2>
             <p className="text-neutral-700 leading-relaxed mb-4">
-              Lookenly may contain affiliate links to products and services. If you click on an affiliate link
+              TrendsetterTales may contain affiliate links to products and services. If you click on an affiliate link
               and make a purchase, we may receive a commission at no additional cost to you. This helps support
               our website and allows us to continue providing content.
             </p>
@@ -199,7 +199,7 @@ export default function TermsPage() {
               8. Indemnification
             </h2>
             <p className="text-neutral-700 leading-relaxed mb-4">
-              You agree to indemnify, defend, and hold harmless Lookenly and its officers, directors, employees,
+              You agree to indemnify, defend, and hold harmless TrendsetterTales and its officers, directors, employees,
               and agents from any claims, liabilities, damages, losses, and expenses, including reasonable
               attorney's fees, arising out of or in any way connected with:
             </p>
@@ -256,7 +256,7 @@ export default function TermsPage() {
               12. Entire Agreement
             </h2>
             <p className="text-neutral-700 leading-relaxed mb-4">
-              These Terms constitute the entire agreement between you and Lookenly regarding your use of the
+              These Terms constitute the entire agreement between you and TrendsetterTales regarding your use of the
               website and supersede all prior agreements and understandings.
             </p>
           </section>
@@ -275,18 +275,18 @@ export default function TermsPage() {
               </p>
               <p>
                 <strong>Email:</strong>{' '}
-                <a href="mailto:hey@lookenly.com" className="text-accent hover:text-primary underline">
-                  hey@lookenly.com
+                <a href="mailto:hey@trendsettertales.com" className="text-accent hover:text-primary underline">
+                  hey@trendsettertales.com
                 </a>
               </p>
-              <p><strong>Website:</strong> lookenly.com</p>
+              <p><strong>Website:</strong> trendsettertales.com</p>
             </div>
           </section>
         </div>
 
         {/* Footer Note */}
         <div className="mt-8 text-center text-sm text-neutral-500">
-          <p>By using Lookenly, you acknowledge that you have read and understood these Terms of Service</p>
+          <p>By using TrendsetterTales, you acknowledge that you have read and understood these Terms of Service</p>
         </div>
       </div>
     </main>

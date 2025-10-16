@@ -15,8 +15,8 @@ export async function generateMetadata({ searchParams }: SearchPageProps) {
   const query = params.q || '';
 
   return {
-    title: query ? `Suche: ${query} - Lookenly` : 'Suche - Lookenly',
-    description: `Suchergebnisse für "${query}" auf Lookenly`,
+    title: query ? `Suche: ${query} - TrendsetterTales` : 'Suche - TrendsetterTales',
+    description: `Suchergebnisse für "${query}" auf TrendsetterTales`,
   };
 }
 

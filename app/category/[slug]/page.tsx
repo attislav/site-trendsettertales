@@ -33,25 +33,25 @@ export async function generateMetadata({ params }: CategoryPageProps) {
     nails: 'Kreative Nail Art Designs, professionelle Nagelpflege-Tipps und die neuesten Nageltrends. Alles für perfekte Nägel.',
   };
 
-  const description = categoryDescriptions[slug.toLowerCase()] || `Alle Artikel der Kategorie ${categoryName} auf Lookenly - Fashion, Beauty & Lifestyle Blog.`;
+  const description = categoryDescriptions[slug.toLowerCase()] || `Alle Artikel der Kategorie ${categoryName} auf TrendsetterTales - Beauty, Outfits & Nails Blog.`;
 
   return {
-    title: `${categoryName} | Lookenly - Fashion, Beauty & Lifestyle Blog`,
+    title: `${categoryName} | TrendsetterTales - Beauty, Outfits & Nails Blog`,
     description,
-    keywords: `${categoryName}, Fashion, Beauty, Lifestyle, Trends, Style, Lookenly`,
+    keywords: `${categoryName}, Beauty, Outfits, Nails, Trends, Style, TrendsetterTales`,
     openGraph: {
-      title: `${categoryName} | Lookenly`,
+      title: `${categoryName} | TrendsetterTales`,
       description,
       type: 'website',
-      siteName: 'Lookenly',
+      siteName: 'TrendsetterTales',
     },
     twitter: {
       card: 'summary_large_image',
-      title: `${categoryName} | Lookenly`,
+      title: `${categoryName} | TrendsetterTales`,
       description,
     },
     alternates: {
-      canonical: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://lookenly.com'}/category/${slug}`,
+      canonical: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://trendsettertales.com'}/category/${slug}`,
     },
   };
 }
