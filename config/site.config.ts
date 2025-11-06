@@ -299,8 +299,8 @@ export const siteConfig: SiteConfig = {
   },
 
   hero: {
-    "title": "Discover Your Style",
-    "subtitle": "Fashion, Beauty & Lifestyle Inspiration",
+    "title": "Elevate Your Elegance",
+    "subtitle": "Timeless Fashion & Beauty for Modern Women",
     "backgroundImage": "/images/hero-bg.jpg",
     "cta": {
         "text": "Explore Now",
