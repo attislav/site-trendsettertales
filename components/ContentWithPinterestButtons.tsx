@@ -21,12 +21,17 @@ export default function ContentWithPinterestButtons({
       const headings = document.querySelectorAll('.blog-content h1, .blog-content h2, .blog-content h3, .blog-content h4, .blog-content h5, .blog-content h6');
 
       headings.forEach((heading) => {
-        // Skip if ID already exists
-        if (heading.id) return;
+        // Skip if ID already exists (WordPress may have already set it)
+        if (heading.id) {
+          // Just add scroll margin if ID exists
+          heading.style.scrollMarginTop = '100px';
+          return;
+        }
 
-        // Generate ID from heading text (preserve case for WordPress compatibility)
+        // Generate ID matching WordPress TOC format: toc-lowercase-with-dashes
         const text = heading.textContent || '';
-        const id = text
+        const slug = text
+          .toLowerCase()
           .trim()
           .replace(/[\u2018\u2019]/g, "'") // Replace smart quotes with regular quotes
           .replace(/[\u201C\u201D]/g, '"') // Replace smart double quotes
@@ -36,9 +41,9 @@ export default function ContentWithPinterestButtons({
           .replace(/\s+/g, '-') // Replace spaces with hyphens
           .replace(/-+/g, '-'); // Remove consecutive hyphens
 
-        if (id) {
-          heading.id = id;
-          // Also make heading clickable for smooth scroll
+        if (slug) {
+          heading.id = `toc-${slug}`;
+          // Also add scroll margin for smooth scroll with fixed header
           heading.style.scrollMarginTop = '100px';
         }
       });
