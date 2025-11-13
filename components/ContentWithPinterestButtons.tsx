@@ -24,10 +24,9 @@ export default function ContentWithPinterestButtons({
         // Skip if ID already exists
         if (heading.id) return;
 
-        // Generate ID from heading text
+        // Generate ID from heading text (preserve case for WordPress compatibility)
         const text = heading.textContent || '';
         const id = text
-          .toLowerCase()
           .trim()
           .replace(/[^\w\s-]/g, '') // Remove special characters
           .replace(/\s+/g, '-') // Replace spaces with hyphens
