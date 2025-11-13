@@ -16,6 +16,32 @@ export default function ContentWithPinterestButtons({
   className = '',
 }: ContentWithPinterestButtonsProps) {
   useEffect(() => {
+    // Add IDs to all headings for anchor link functionality
+    const addHeadingIds = () => {
+      const headings = document.querySelectorAll('.blog-content h1, .blog-content h2, .blog-content h3, .blog-content h4, .blog-content h5, .blog-content h6');
+
+      headings.forEach((heading) => {
+        // Skip if ID already exists
+        if (heading.id) return;
+
+        // Generate ID from heading text
+        const text = heading.textContent || '';
+        const id = text
+          .toLowerCase()
+          .trim()
+          .replace(/[^\w\s-]/g, '') // Remove special characters
+          .replace(/\s+/g, '-') // Replace spaces with hyphens
+          .replace(/-+/g, '-'); // Remove consecutive hyphens
+
+        if (id) {
+          heading.id = id;
+        }
+      });
+    };
+
+    // Run heading ID generation
+    addHeadingIds();
+
     // Function to add Pinterest button to an image
     const addPinterestButton = (htmlImg: HTMLImageElement) => {
       // Skip if button already added
