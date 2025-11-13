@@ -28,12 +28,18 @@ export default function ContentWithPinterestButtons({
         const text = heading.textContent || '';
         const id = text
           .trim()
+          .replace(/[\u2018\u2019]/g, "'") // Replace smart quotes with regular quotes
+          .replace(/[\u201C\u201D]/g, '"') // Replace smart double quotes
+          .replace(/\u2013/g, '-') // Replace en dash
+          .replace(/\u2014/g, '-') // Replace em dash
           .replace(/[^\w\s-]/g, '') // Remove special characters
           .replace(/\s+/g, '-') // Replace spaces with hyphens
           .replace(/-+/g, '-'); // Remove consecutive hyphens
 
         if (id) {
           heading.id = id;
+          // Also make heading clickable for smooth scroll
+          heading.style.scrollMarginTop = '100px';
         }
       });
     };
