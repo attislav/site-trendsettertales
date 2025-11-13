@@ -16,6 +16,26 @@ export default function ContentWithPinterestButtons({
   className = '',
 }: ContentWithPinterestButtonsProps) {
   useEffect(() => {
+    // Handle old anchor format in URL (#Capitalized-Text) and convert to WordPress format (#toc-lowercase-text)
+    const handleAnchorRedirect = () => {
+      const hash = window.location.hash;
+      if (!hash || hash.startsWith('#toc-')) return; // Already correct format or no hash
+
+      // Convert old format to new: #Belted-Coat... → #toc-belted-coat...
+      const newHash = '#toc-' + hash.slice(1).toLowerCase();
+      const targetElement = document.getElementById(newHash.slice(1));
+
+      if (targetElement) {
+        // Smooth scroll to element
+        targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        // Update URL without reload
+        window.history.replaceState(null, '', newHash);
+      }
+    };
+
+    // Run on initial load
+    handleAnchorRedirect();
+
     // Add IDs to all headings for anchor link functionality
     const addHeadingIds = () => {
       const headings = document.querySelectorAll('.blog-content h1, .blog-content h2, .blog-content h3, .blog-content h4, .blog-content h5, .blog-content h6');
